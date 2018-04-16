@@ -16,10 +16,10 @@
     <script src="js/lib/jquery.validate.js"></script>
 
     <!--Site scripts-->
+    <script src="js/global.js"></script>
     <script src="js/database.js"></script>
     <script src="js/queries.js"></script>
     <script src="js/script.js"></script>
-        <script src="js/global.js"></script>
 
     <title>Brantford Master Gardeners</title>
 </head>
@@ -56,26 +56,33 @@
 </header>
 
 <body>
-    <div id="contact-container">
+    <div id="member-login-container">
         <div class="headline">
-            <h1>Contact</h1>
-            <div class="smaller-border"></div>
-
+            <h1>Member Only Area</h1>
+            <div class="small-border"></div>
         </div>
-        <div class="form-container">
-            <div class="contact-text">
-                <p>
-                    If you have any specific questions about gardening, our events, tips or other concerns please email us with the details using the general inquiry subject.
-                </p>
-                <br>
-                <p>
-                    Interested in <span class="highlight">becoming a Master Gardener?</span> Great! Our Master Gardener in Training Coordinator will be happy to talk with you. Just contact us using the Become a Master Gardener subject.
-                </p>
-                <br>
-                <h3>
-                    Brantford Master Gardeners look forward to your inquiry.
-                </h3>
+        <div class="btn-content">
+            <button onclick="memberContentBtn()" id="btn-content" class="btn">Content</button>
+        </div>
+        <div class="btn-accountsettings">
+            <button onclick="memberAccountSettingsBtn()" id="btn-accountsettings" class="btn">Account Settings</button>
+        </div>
+        <div class="btn-membercontact">
+            <button type="button" onclick="memberContactBtn()" id="btn-membercontact" class="btn">Contact</button>
+        </div>
+
+        <div id="membercontainer-one" class="membercontainer-one">
+            <h1>Content</h1>
+            <div id="contentOutput" class="contentOutput">
             </div>
+        </div>
+
+        <div id="membercontainer-two" class="membercontainer-two">
+            <h1>Account Settings</h1>
+        </div>
+
+        <div id="membercontainer-three" class="membercontainer-three">
+            <h1>Contact</h1>
             <form id="frmContact" action="">
 
                 <label for="txtFirstName">First Name:</label>
@@ -85,7 +92,7 @@
                 <input type="text" id="txtLastName" name="txtLastName" placeholder="Last name">
 
                 <label for="txtEmailAddress">Email:</label>
-                <input type="email" id="txtEmailAddress" name="txtEmailAddress" placeholder="Email">
+                <input type="text" id="txtEmailAddress" name="txtEmailAddress" placeholder="Email">
 
                 <label for="selSubject">Subject</label>
                 <select id="selSubject" name="selSubject">
@@ -97,12 +104,13 @@
                 <textarea id="txtMessage" name="txtMessage" placeholder="Write something.." style="height:50px"></textarea>
 
                 <div class="contact-inputs">
-                    <button type="button" id="btnContactSubmit" class="btn" name="btnContactSubmit">Submit</button>
+                    <input type="submit" id="btnSubmit" value="Submit">
                     <input type="reset" value="Reset">
                 </div>
 
             </form>
         </div>
+
     </div>
 </body>
 

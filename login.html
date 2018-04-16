@@ -16,10 +16,10 @@
     <script src="js/lib/jquery.validate.js"></script>
 
     <!--Site scripts-->
+    <script src="js/global.js"></script>
     <script src="js/database.js"></script>
     <script src="js/queries.js"></script>
     <script src="js/script.js"></script>
-        <script src="js/global.js"></script>
 
     <title>Brantford Master Gardeners</title>
 </head>
@@ -56,52 +56,49 @@
 </header>
 
 <body>
-    <div id="contact-container">
+    <div id="login-container">
         <div class="headline">
-            <h1>Contact</h1>
+            <h1>LOGIN</h1>
             <div class="smaller-border"></div>
-
         </div>
-        <div class="form-container">
-            <div class="contact-text">
-                <p>
-                    If you have any specific questions about gardening, our events, tips or other concerns please email us with the details using the general inquiry subject.
-                </p>
-                <br>
-                <p>
-                    Interested in <span class="highlight">becoming a Master Gardener?</span> Great! Our Master Gardener in Training Coordinator will be happy to talk with you. Just contact us using the Become a Master Gardener subject.
-                </p>
-                <br>
-                <h3>
-                    Brantford Master Gardeners look forward to your inquiry.
-                </h3>
-            </div>
-            <form id="frmContact" action="">
+        <div class="member-login">
+            <h2 class="sub-headline">Member Login</h2>
 
-                <label for="txtFirstName">First Name:</label>
-                <input type="text" id="txtFirstName" name="txtFirstName" placeholder="First name">
+            <form id="frmMemberLogin" action="">
+                <label for="txtMemberEmailAddress">Email Address</label>
+                <input type="email" id="txtMemberEmailAddress" name="txtMemberEmailAddress" placeholder="Email Address">
 
-                <label for="txtLastName">Last Name:</label>
-                <input type="text" id="txtLastName" name="txtLastName" placeholder="Last name">
-
-                <label for="txtEmailAddress">Email:</label>
-                <input type="email" id="txtEmailAddress" name="txtEmailAddress" placeholder="Email">
-
-                <label for="selSubject">Subject</label>
-                <select id="selSubject" name="selSubject">
-                  <option value="General Inquiry">General Inquiry</option>
-                  <option value="Become a Master Gardener">Become a Master Gardener</option>
-                </select>
-
-                <label for="txtMessage">Message</label>
-                <textarea id="txtMessage" name="txtMessage" placeholder="Write something.." style="height:50px"></textarea>
+                <label for="txtMemberPassword">Password</label>
+                <input type="text" id="txtMemberPassword" name="txtMemberPassword" placeholder="Password">
 
                 <div class="contact-inputs">
-                    <button type="button" id="btnContactSubmit" class="btn" name="btnContactSubmit">Submit</button>
-                    <input type="reset" value="Reset">
+                    <button type="button" id="btnMemberLogin" class="btn" name="btnMemberLogin">Submit</button>
                 </div>
-
             </form>
+        </div>
+        <div class="admin-login">
+            <h2 class="sub-headline">Admin Login</h2>
+
+            <form id="frmAdminLogin" action="">
+                <label for="txtAdminEmailAddress">Email Address</label>
+                <input type="email" id="txtAdminEmailAddress" name="txtAdminEmailAddress" placeholder="Email Address">
+
+                <label for="txtAdminPassword">Password</label>
+                <input type="text" id="txtAdminPassword" name="txtAdminPassword" placeholder="Password">
+
+                <div class="contact-inputs">
+                    <button type="button" id="btnAdminLogin" class="btn" name="btnAdminLogin">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="first-time">
+            <h2 class="sub-headline">First time here?</h2>
+            <p>
+                Not to worry! Before you are able to have a member login you will need to become a member of the Brantford Master Gardeners.
+            </p>
+            <p class="hyperlinks">
+                <a href="signup.html">You can learn more about becoming a Master Gardener here</a>
+            </p>
         </div>
     </div>
 </body>

@@ -56,42 +56,36 @@
 </header>
 
 <body>
-    <div id="index-container">
+    <div id="member-login-container">
         <div class="headline">
-            <h1>Motivating and Inspiring Gardeners in Ontario</h1>
-            <div class="larger-border"></div>
+            <h1>Admin Only Area</h1>
+            <div class="small-border"></div>
         </div>
-        <div class="text-block">
-            <p>Master Gardeners (MGs) in the Province of Ontario are experienced gardeners who have studied horticulture extensively and continue to upgrade their skills through technical training. With this training and continuing education, Master Gardeners are volunteers who provide expert horticultural advice to the general public. </p>
+        <div class="btn-content">
+            <button onclick="memberContentBtn()" id="btn-content" class="btn">Upload Member Content</button>
         </div>
-        <div class="img-row--event">
-            <a href="events.html"><img src="assets/images/event.png"></a>
+        <div class="btn-accountsettings">
+            <button onclick="memberAccountSettingsBtn()" id="btn-accountsettings" class="btn">Account Settings</button>
         </div>
-        <div class="img-row--tips">
-            <a href="tips.html"><img src="assets/images/tips.png"></a>
-        </div>
-        <div class="img-row--contact">
-            <a href="contact.html"><img src="assets/images/contact.png"></a>
-        </div>
-        <div class="text-row--event">
-            <p>Interested in joining one of the Brantford Master Gardener Events? We frequently host gardeneing events that </p>
-        </div>
-        <div class="text-row--tips">
-            <p>Need help with gardening? Here you will find a helpful list of our tips and guides relating to gardening. Check back often to find help with your seasonal gardening needs.</p>
-        </div>
-        <div class="text-row--contact">
-            <p>If you have any specific questions about gardening or for our master gardeners, please contact us. You will be able to reach us by filling out the form on our contact page</p>
+        <div class="btn-membercontact">
+            <button type="button" onclick="memberContactBtn()" id="btn-membercontact" class="btn">Events</button>
         </div>
 
-        <div class="btn-row--event">
-            <a href="events.html" class="btn">Events</a>
+        <div id="membercontainer-one" class="membercontainer-one">
+            <h1>Upload Member Content</h1>
+            <div id="contactOutput" class="contactOutput">
+            </div>
         </div>
-        <div class="btn-row--tips">
-            <a href="tips.html" class="btn">Tips & Guides</a>
+
+        <div id="membercontainer-two" class="membercontainer-two">
+            <h1>Account Settings</h1>
         </div>
-        <div class="btn-row--contact">
-            <a href="contact.html" class="btn">Contact</a>
+
+        <div id="membercontainer-three" class="membercontainer-three">
+            <h1>Events</h1>
+            <p>Add events at <a href="eventbrite.ca">eventbrite</a></p>
         </div>
+
     </div>
 </body>
 

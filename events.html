@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Orbitron" rel="stylesheet">
+    
+    <!--jQuery libraries-->
+    <script src="js/lib/jquery-2.1.4.js"></script>
+    <script src="js/lib/jquery.validate.js"></script>
+    
+        <!--Site scripts-->
+    <script src="js/global.js"></script>
+    <script src="js/database.js"></script>
+    <script src="js/queries.js"></script>
+    <script src="js/script.js"></script>
+    
+    <title>Brantford Master Gardeners</title>
+
+    <script src="https://www.eventbrite.ca/static/widgets/eb_widgets.js"></script>
+
+    <!-- script for the event iframe registrations -->
+    <script type="text/javascript">
+        var exampleCallback = function() {
+            console.log('Order complete!');
+        };
+
+        window.EBWidgets.createWidget({
+            // Required
+            widgetType: 'checkout',
+            eventId: '45044032915',
+            iframeContainerId: 'eventbrite-widget-container-45044032915',
+
+            // Optional
+            iframeContainerHeight: 350,
+            onOrderComplete: exampleCallback // Method called when an order has successfully completed
+        });
+    </script>
+</head>
+
+<header>
+    <div id="header-container">
+         <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/bmglogo.png">
+            </a>
+        </div>
+
+        <div id="leftNav" class="left-nav">
+            <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">&#9776;</a>
+            <a href="signup.html">Become a Master Gardener</a>
+            <a href="events.html">Events</a>
+            <a href="tips.html">Tips & Guides</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div id="rightNav" class="right-nav">
+            <a href="signup.html" class="right-border">Sign up</a>
+            <a href="login.html">Login</a>
+        </div>
+
+        <div id="hero-banner">
+            <div class="hero-text">
+                <span>Brantford Master Gardeners</span>
+                <p class="small-hero">informing - educating - inspiring</p>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<body>
+    <div id="events-container">
+        <div class="headline">
+            <h1>Events</h1>
+            <div class="smaller-border"></div>
+        </div>
+        <div class="events">
+            <h2 class="sub-headline">
+                Upcoming Events & Calendar
+            </h2>
+
+            <div class="events-wrapper">
+                <div class="registration">
+                    <div class="event-registration" id="eventbrite-widget-container-45044032915"></div>
+                </div>
+                <div class="calendar">
+                    <div style="width:195px; text-align:center;"><iframe class="calendar-style" src="https://www.eventbrite.ca/calendar-widget?eid=45044032915" frameborder="0" height="344" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe>
+                        <div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:195px; text-align:center;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<footer>
+    <h2> &copy; Brantford Master Gardeners</h2>
+    <p>Version 1.0</p>
+</footer>
+
+</html>
